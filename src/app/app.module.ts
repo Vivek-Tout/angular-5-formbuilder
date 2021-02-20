@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { EditAppComponent } from './edit-app/edit-app.component';
 import { DndModule } from 'ngx-drag-drop';
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import { HttpClientModule } from '@angular/common/http';
+import { CheckComponent } from './check/check.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: EditAppComponent },
@@ -15,7 +19,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EditAppComponent
+    EditAppComponent,
+    CheckComponent,
+    WelcomeComponent,
+
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -24,6 +31,7 @@ const appRoutes: Routes = [
     FormsModule,
     AppRoutingModule,
     DndModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
