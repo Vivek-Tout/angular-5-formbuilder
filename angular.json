@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "formbuilder"
+  "defaultProject": "formbuilder",
+  "cli": {
+    "analytics": "bec8a28a-ccac-4a32-9f31-103378f28c7b"
+  }
 }
