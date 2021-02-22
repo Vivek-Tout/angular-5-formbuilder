@@ -10,6 +10,7 @@ import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { HttpClientModule } from '@angular/common/http';
 import { CheckComponent } from './check/check.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { QueryBuilderModule } from "angular2-query-builder";
 
 
 const appRoutes: Routes = [
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     DndModule,
     HttpClientModule,
+    QueryBuilderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
