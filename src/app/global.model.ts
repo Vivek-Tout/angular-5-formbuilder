@@ -119,3 +119,68 @@ export interface IProperty {
   post_type?:any;
   developer_id?:any;
 }
+/*
+  export function createQueryBuild(ruleSets){
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://93d042df4133.ngrok.io/api/vi/query_build',
+      'headers': {
+        'Content-Type': 'application/json',
+        },
+      'body': JSON.stringify({"rule_sets": ruleSets })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+  }
+  /*
+  export function queryBuildConfig(){
+    var request = require('request');
+    var options = {
+      'method': 'GET',
+      'url': 'https://93d042df4133.ngrok.io/api/vi/query_build/builder_config',
+      'headers': {
+        'Content-Type': 'application/json',
+      }
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+      response.body
+    });
+  }
+  
+/*
+export function createQueryBuild(ruleSets){
+  var request = require('request');
+  var options = {
+    'method': 'POST',
+    'url': 'https://93d042df4133.ngrok.io/api/vi/query_build',
+    'headers': {
+      'Content-Type': 'application/json',
+      },
+    'body': JSON.stringify({"rule_sets": ruleSets })
+  };
+  request(options, function (error, response) {
+    if (error) throw new Error(error);
+    console.log(response.body);
+  });
+}
+
+export function queryBuildConfig(){
+  var request = require('request');
+  var options = {
+    'method': 'GET',
+    'url': 'https://93d042df4133.ngrok.io/api/vi/query_build/builder_config',
+    'headers': {
+      'Content-Type': 'application/json',
+    }
+  };
+  request(options, function (error, response) {
+    if (error) throw new Error(error);
+    console.log(response.body);
+    response.body
+  });
+}*/
